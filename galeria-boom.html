@@ -376,6 +376,13 @@
   .foot-social{display:flex; gap:16px;}
   .foot-social a{width:36px; height:36px; border:1px solid var(--line); border-radius:50%; display:flex; align-items:center; justify-content:center; transition:all .3s;}
   .foot-social a:hover{border-color:var(--brand); color:var(--brand); transform:translateY(-3px);}
+
+/* BOOM V4 | Galeria compacta */
+.container{max-width:1180px;padding-inline:clamp(20px,3.5vw,42px);}
+.gallery-hero{min-height:0;padding:125px 0 50px;}
+.gallery-hero h1{font-size:clamp(50px,7vw,94px);}
+@media(max-width:700px){.gallery-hero{padding:112px 0 36px;}.gallery-hero h1{font-size:clamp(44px,11vw,68px);}}
+
 </style>
 </head>
 <body>

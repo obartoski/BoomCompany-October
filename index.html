@@ -1212,6 +1212,57 @@ header.scrolled .logo-img{width:102px;}
 .foot-contact a{display:inline-block;margin:0 24px 8px 0;font-size:13px;color:#d5d3cd;overflow-wrap:anywhere;}
 .foot-contact a:hover{color:var(--brand);}
 @media(max-width:700px){.logo-img{width:95px;}header.scrolled .logo-img{width:88px;}.foot-top{gap:32px}.foot-cols{width:100%}.foot-nav-links{column-gap:20px}.foot-bottom{align-items:flex-start}.foot-social{margin-top:8px}.modality-media{aspect-ratio:4/5}.hero-media .hero-image{object-position:55% center}}
+
+/* BOOM V4 | Refino de proporções, ritmo e leitura */
+:root{--layout-width:1180px;}
+.container{max-width:var(--layout-width);padding-inline:clamp(20px,3.5vw,42px);}
+.section-pad{padding:clamp(64px,7.8vw,104px) 0;}
+.hero{min-height:min(790px,90svh);padding:135px 0 65px;}
+.hero-title{font-size:clamp(54px,8vw,112px);line-height:.96;letter-spacing:-.015em;}
+.hero-sub{font-size:clamp(14px,1.3vw,16px);max-width:390px;}
+.hero-bottom{gap:30px;}
+.section-heading{font-size:clamp(30px,4.4vw,54px);}
+.modality{min-height:0;padding:clamp(62px,7vw,95px) 0;}
+.modality-inner{gap:clamp(28px,4vw,64px);}
+.modality-media{aspect-ratio:5/4;max-width:580px;border-radius:16px;}
+.modality-copy{padding:0 clamp(0px,2vw,28px);}
+.modality-title{font-size:clamp(44px,5.6vw,78px);line-height:.98;margin-bottom:19px;}
+.modality-desc{font-size:15px;max-width:370px;margin-bottom:24px;}
+.professionals-track{gap:18px;}
+.professional-card{min-height:430px;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);}
+.professional-info{min-height:430px;padding:clamp(24px,3vw,42px);}
+.professional-name{font-size:clamp(35px,4vw,58px);margin-bottom:18px;}
+.professional-description{font-size:14px;line-height:1.65;}
+.professional-social{margin-top:20px;}
+.comm-panel{padding:clamp(28px,3.6vw,48px);}
+.comm-title{font-size:clamp(28px,3vw,39px);}
+.cert-band{gap:clamp(24px,4vw,56px);}
+.final-cta{padding:clamp(86px,11vw,135px) 0 clamp(95px,12vw,145px);}
+.final-title{font-size:clamp(53px,8.7vw,112px);}
+.final-sub{margin:20px auto 32px;font-size:15px;}
+.final-paths{margin-bottom:35px;}
+.btn,.btn-modality{transition-duration:.25s;}
+.comm-list li::before{content:'•';}
+@media(min-width:1100px){.professional-card{flex-basis:74%;}}
+@media(min-width:901px){.modality-inner{grid-template-columns:minmax(0,1fr) minmax(0,.88fr);}}
+@media(max-width:900px){.modality-media{width:100%;max-width:none;aspect-ratio:16/11;}.professional-card{flex-basis:90%;}.hero{min-height:75svh;}}
+@media(max-width:700px){
+ .hero{min-height:78svh;padding:118px 0 54px;}
+ .hero-title{font-size:clamp(49px,12vw,79px);}
+ .section-pad{padding:62px 0;}
+ .modality{padding:56px 0;}
+ .modality-inner{gap:26px;}
+ .modality-media{aspect-ratio:4/3;}
+ .modality-title{font-size:clamp(43px,12vw,65px);}
+ .professional-card{flex-basis:94%;min-height:0;}
+ .professional-info{min-height:0;padding:25px 22px 30px;}
+ .professional-name{font-size:clamp(34px,9vw,47px);}
+ .final-cta{padding:86px 0 100px;}
+ .final-title{font-size:clamp(49px,12vw,78px);}
+ .foot-top{padding-bottom:32px;}
+}
+@media(prefers-reduced-motion:reduce){.reveal,.hero-title .line span{animation:none!important;transition:none!important;transform:none!important;opacity:1!important;}}
+
 </style>
 </head>
 <body>
@@ -1480,7 +1531,7 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
 <!-- ============ VÍDEOS ============ -->
 <section class="section-pad" id="videos">
 <div class="container">
-<h2 class="display reveal" style="font-size:clamp(38px,6vw,80px); margin-top:18px;">
+<h2 class="display reveal" style="font-size:clamp(34px,4.8vw,58px); margin-top:18px;">
       ASSISTA.<br/>MOVIMENTE-SE.<br/>REPITA.
     </h2>
 <div class="video-cards">
@@ -1574,7 +1625,7 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
 <!-- ============ GALERIA ============ -->
 <section class="section-pad" id="galeria">
 <div class="container">
-<h2 class="display reveal" style="font-size:clamp(34px,5vw,60px); margin:18px 0 50px; text-transform:none; font-family:'Inter',sans-serif; font-weight:800;">Um pouco mais da nossa história.</h2>
+<h2 class="display reveal" style="font-size:clamp(30px,4vw,49px); margin:18px 0 50px; text-transform:none; font-family:'Inter',sans-serif; font-weight:800;">Um pouco mais da nossa história.</h2>
 <div class="gallery">
 <div class="g-item g1 reveal">
 <div class="media-placeholder">
