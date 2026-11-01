@@ -121,7 +121,7 @@
   .logo{font-family:'Anton',sans-serif; font-size:22px; letter-spacing:0.04em; text-transform:uppercase; display:flex; align-items:center; gap:2px;}
  
   .logo-img{
-  width:72px;
+  width:112px;
   height:auto;
   display:block;
   object-fit:contain;
@@ -1188,6 +1188,31 @@ max-width: 800px;}
   .foot-social a:hover{border-color:var(--brand); color:var(--brand); transform:translateY(-3px);}
 
   .placeholder-note{font-size:10px; color:var(--ink-dim); opacity:.55; font-style:italic;}
+
+/* Revisão visual BOOM 2026 */
+.hero-media .hero-image{width:100%;height:100%;object-fit:cover;object-position:center 42%;}
+.hero-media::after{background:linear-gradient(180deg,rgba(10,10,10,.34) 0%,rgba(10,10,10,.22) 40%,rgba(10,10,10,.78) 100%);}
+.logo-img{width:112px;height:auto;max-width:none;}
+header.scrolled .logo-img{width:102px;}
+.media-placeholder{overflow:hidden;}
+.media-placeholder > img,.g-item .media-placeholder > img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;}
+.modality-media{aspect-ratio:4/5;max-width:800px;}
+.modality-media .media-placeholder > img{object-fit:cover;object-position:center 42%;}
+#jump .modality-media .media-placeholder > img{object-position:center 38%;}
+.professional-photo{overflow:hidden;}
+.professional-photo img{object-fit:cover;object-position:center 22%;}
+.professional-card:nth-child(5) .professional-photo img{object-position:center 18%;}
+.modality-mark{right:22px;bottom:22px;width:clamp(52px,6vw,80px);z-index:5;}
+.foot-top{align-items:flex-start;}
+.foot-brand p{margin-top:16px;max-width:285px;font-size:13px;color:var(--ink-dim);line-height:1.8;}
+.foot-cols .foot-col:first-child{display:block;}
+.foot-nav-links{display:grid;grid-template-columns:repeat(2,minmax(110px,1fr));column-gap:32px;row-gap:3px;}
+.foot-cols{gap:30px;}
+.foot-bottom{align-items:center;}
+.foot-contact h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:12px;}
+.foot-contact a{display:inline-block;margin:0 24px 8px 0;font-size:13px;color:#d5d3cd;overflow-wrap:anywhere;}
+.foot-contact a:hover{color:var(--brand);}
+@media(max-width:700px){.logo-img{width:95px;}header.scrolled .logo-img{width:88px;}.foot-top{gap:32px}.foot-cols{width:100%}.foot-nav-links{column-gap:20px}.foot-bottom{align-items:flex-start}.foot-social{margin-top:8px}.modality-media{aspect-ratio:4/5}.hero-media .hero-image{object-position:55% center}}
 </style>
 </head>
 <body>
@@ -1199,7 +1224,7 @@ max-width: 800px;}
   <div class="container nav-row">
     <a href="#top" class="logo">
   <img
-    src="logo-boom.png"
+    src="assets/logos/boom-company.png"
     alt="BOOM Company"
     class="logo-img"
   >
@@ -1237,7 +1262,7 @@ max-width: 800px;}
 <section class="hero" id="top">
   <div class="hero-media">
      <img
-      src="foto hero privisória 2.1.jpg"
+      src="assets/images/hero-boom.jpg"
       alt="Aula BOOM Dance"
       class="hero-image"
       >
@@ -1275,14 +1300,14 @@ max-width: 800px;}
       <div class="about-img reveal">
         <div class="media-placeholder" role="img" aria-label="Espaço reservado para foto real da equipe/marca">
          <img
-      src="foto.provisoria.equipe.jpeg"
+      src="assets/images/foto.provisoria.equipe.jpeg"
       alt="Aula BOOM Dance"
       class="hero-image"
       >
         </div>
       </div>
       <div class="about-copy reveal">
-        <p>A Boom nasceu do movimento literal e figurado. Cada modalidade carrega sua própria energia, mas todas compartilham a mesma raiz: gente de verdade se movendo junto. <span class="placeholder-note">[SUBSTITUIR POR CONTEÚDO REAL]</span></p>
+        <p>A Boom nasceu do movimento literal e figurado. Cada modalidade carrega sua própria energia, mas todas compartilham a mesma raiz: gente de verdade se movendo junto. </p>
         <div class="stat-row">
           <div class="stat"><b>00+</b><span>Alunos ativos<br><span class="placeholder-note">[dado provisório]</span></span></div>
           <div class="stat"><b>00+</b><span>Licenciados<br><span class="placeholder-note">[dado provisório]</span></span></div>
@@ -1303,10 +1328,10 @@ max-width: 800px;}
   <div class="modality" id="dance">
     <div class="container modality-inner">
       <div class="modality-media reveal">
-        <img class="modality-mark" src="logo-dance.png" alt="" aria-hidden="true" loading="lazy">
+        <img class="modality-mark" src="assets/logos/boom-dance.png" alt="" aria-hidden="true" loading="lazy">
         <div class="media-placeholder" role="img" aria-label="Espaço reservado para foto real de aula de Boom Dance">
           <img
-      src="foto Boom Dnace.jpg"
+      src="assets/images/foto Boom Dnace.jpg"
       alt="Aula BOOM Dance"
       class="hero-image"
       >
@@ -1327,10 +1352,10 @@ max-width: 800px;}
 
     <div class="container modality-inner">
       <div class="modality-media reveal">
-        <img class="modality-mark" src="logo-jump.png" alt="" aria-hidden="true" loading="lazy">
+        <img class="modality-mark" src="assets/logos/boom-jump.png" alt="" aria-hidden="true" loading="lazy">
         <div class="media-placeholder" role="img" aria-label="Espaço reservado para foto real de aula de Boom Jump">
    <img
-      src="foto.boom.jump.jpeg"
+      src="assets/images/foto.boom.jump.jpeg"
       alt="Aula BOOM Jump"
       class="hero-image"
       >        </div>
@@ -1393,7 +1418,7 @@ max-width: 800px;}
 
             <div class="professional-photo">
               <img
-                src="Rapha.Bruno.apresentacao.jpeg"
+                src="assets/images/Rapha.Bruno.apresentacao.jpeg"
                 alt="Foto de estúdio do Raphael Bruno com roupa florida"
               >
             </div>
@@ -1431,7 +1456,7 @@ max-width: 800px;}
 
             <div class="professional-photo">
               <img
-                src="wallyson.apresentacao.2.0.jpeg"
+                src="assets/images/wallyson.apresentacao.2.0.jpeg"
                 alt="Wallyson foto profissional"
               >
             </div>
@@ -1469,7 +1494,7 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
 
             <div class="professional-photo">
               <img
-                src="reh.apresentacao.jpeg"
+                src="assets/images/reh.apresentacao.jpeg"
                 alt="Foto profissional de Reh Honorato"
               >
             </div>
@@ -1508,7 +1533,7 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
 
             <div class="professional-photo">
               <img
-                src="talita.apresentacao.jpeg"
+                src="assets/images/talita.apresentacao.jpeg"
                 alt="Foto profissional de Talita Iacona"
               >
             </div>
@@ -1548,7 +1573,7 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
 
             <div class="professional-photo">
               <img
-                src="debora-silva.jpg"
+                src="assets/images/debora-silva.jpg"
                 alt="Foto profissional de Débora da Silva"
               >
             </div>
@@ -1655,7 +1680,7 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
 
           <!-- IMAGEM / THUMBNAIL DO VÍDEO -->
           <img 
-            src="boom.dance.video.jpeg"
+            src="assets/images/boom.dance.video.jpeg"
             alt="Thumbnail Boom Dance — Coreografia As Cowgirls"
           >
 
@@ -1683,7 +1708,7 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
 
           <!-- IMAGEM / THUMBNAIL DO VÍDEO -->
           <img 
-            src="boom.jump.video.jpeg"
+            src="assets/images/boom.jump.video.jpeg"
             alt="Thumbnail Boom Jump — Aula completa"
           >
 
@@ -1711,7 +1736,7 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
 
           <!-- IMAGEM / THUMBNAIL DO VÍDEO -->
           <img 
-            src="boom.dance.video.0.2.jpeg"
+            src="assets/images/boom.dance.video.0.2.jpeg"
             alt="Thumbnail Boom Dance — Não Para"
           >
 
@@ -1768,7 +1793,7 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
   <div class="cert-media">
      <div class="professional-photo">
               <img
-                src="foto.formacao.2.jpeg"
+                src="assets/images/foto.formacao.2.jpeg"
                 alt="Foto para o campo de formação"
               >
             </div>
@@ -1788,31 +1813,31 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
     <div class="gallery">
       <div class="g-item g1 reveal">
         <div class="media-placeholder">
-          <img src="foto_1.jpeg" alt="Equipe Boom" loading="lazy">
+          <img src="assets/images/foto_1.jpeg" alt="Equipe Boom" loading="lazy">
         </div>
         <span class="g-cap">Equipe Boom</span>
       </div>
       <div class="g-item g2 reveal">
         <div class="media-placeholder">
-          <img src="foto_2.jpeg" alt="Professoras" loading="lazy">
+          <img src="assets/images/foto_2.jpeg" alt="Professoras" loading="lazy">
         </div>
         <span class="g-cap">Professoras</span>
       </div>
       <div class="g-item g3 reveal">
         <div class="media-placeholder">
-          <img src="foto_3.jpeg" alt="Festa Junina 2026" loading="lazy">
+          <img src="assets/images/foto_3.jpeg" alt="Festa Junina 2026" loading="lazy">
         </div>
         <span class="g-cap">Festa Junina 2026</span>
       </div>
       <div class="g-item g4 reveal">
         <div class="media-placeholder">
-          <img src="foto_4.jpeg" alt="Professores" loading="lazy">
+          <img src="assets/images/foto_4.jpeg" alt="Professores" loading="lazy">
         </div>
         <span class="g-cap">Professores</span>
       </div>
       <a href="galeria-boom.html" class="g-item g5 reveal gallery-cta" aria-label="Ver galeria completa">
         <div class="gallery-cta-inner">
-          <span class="gallery-cta-count">+24</span>
+          <span class="gallery-cta-count">+11</span>
           <span class="gallery-cta-label">Ver galeria completa </span>
         </div>
       </a>
@@ -1842,14 +1867,30 @@ Com experiência em grandes eventos do segmento, como Fitness Brasil e ENAFs, tr
 <footer id="contato">
   <div class="container">
     <div class="foot-top">
-      <div><a href="#top" class="logo"><img src="logo-boom.png" alt="BOOM Company" class="logo-img"></a>
-      <p style="margin-top:16px;max-width:280px;font-size:13px;color:var(--ink-dim);line-height:1.8">Fitness, dança e movimento.<br>Uma marca, várias formas de fazer parte.</p></div>
-      <div class="foot-cols"><div class="foot-col"><h4>Navegue</h4>
-      <a href="#a-boom">A Boom</a><a href="#modalidades">Modalidades</a><a href="#experiencia">Experiência</a><a href="#galeria">Galeria</a><a href="#licenciamento">Licencie</a><a href="#alunos">Faça parte</a></div></div>
+      <div class="foot-brand">
+        <a href="#top" class="logo"><img src="assets/logos/boom-company.png" alt="BOOM Company" class="logo-img"></a>
+        <p>Fitness, dança e movimento.<br>Uma marca, várias formas de fazer parte.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col"><h4>Navegue</h4>
+          <div class="foot-nav-links"><a href="#a-boom">A Boom</a><a href="#modalidades">Modalidades</a><a href="#experiencia">Experiência</a><a href="#galeria">Galeria</a><a href="#licenciamento">Licencie</a><a href="#alunos">Faça parte</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-contact"><h4>Contato</h4>
+        <a href="mailto:contato@boomcompany.com.br">contato@boomcompany.com.br</a>
+        <a href="https://www.instagram.com/boomcompanyoficial/" target="_blank" rel="noopener noreferrer">@boomcompanyoficial</a>
+      </div>
+      <div class="foot-social" aria-label="Redes sociais">
+        <a href="https://www.instagram.com/boomcompanyoficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TT</a>
+      </div>
     </div>
   </div>
 </footer>
-  
+
 <script>
   // --- navbar scroll state ---
   const header = document.getElementById('siteHeader');
